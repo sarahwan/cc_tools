@@ -5,11 +5,11 @@
             "name": "Atari Lynx"
         },
         "title": "Chip's Challenge",
-        "Year": "1989"
+        "Year": 1989
     },
     "game 2": {
         "platform": {
-            "launch year": "2003",
+            "launch year": 2003,
             "name": "Steam"
         },
         "title": "Chip's Challenge 2",
@@ -17,10 +17,10 @@
     },
     "game 3": {
         "platform": {
-            "launch year": "2006",
+            "launch year": 2006,
             "name": "Wii"
         },
         "title": "Super Smash Bros. Brawl",
-        "Year": "2008"
+        "Year": 2008
     }
 }

@@ -1,0 +1,15 @@
+[
+    {
+        "level number": 1,
+        "time": -1,
+        "num_chips": -1,
+        "upper layer": [],
+        "lower layer": [],
+        "optional_fields": [
+            {
+                "id": "hint",
+                "hint_text": "text"
+            }
+        ]
+    }
+]

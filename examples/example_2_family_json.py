@@ -26,7 +26,7 @@ def make_family_from_json(json_data):
     #We're done making and adding all the kids, so return the finished Family
     return new_family
 
-with open("data/family.json", "r") as reader:
+with open("family.json", "r") as reader:
     family_json = json.load(reader)
 
 print("JSON data:")
