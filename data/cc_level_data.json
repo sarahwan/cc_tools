@@ -1,15 +1,28 @@
 [
     {
         "level number": 1,
-        "time": -1,
-        "num_chips": -1,
+        "time": 360,
+        "num_chips": 5,
         "upper layer": [],
         "lower layer": [],
         "optional_fields": [
-            {
-                "id": "hint",
-                "hint_text": "text"
-            }
+            { "id": "hint", "hint_text": "Find all the chips to unlock the socket and reach the exit! Watch out for monsters..." },
+            { "id": "title", "title_text": "PfGD CC Level 1"},
+            { "id": "password", "password": [218, 209, 208, 201] },
+            { "id": "monster", "monster_location": [] }
+        ]
+    },
+    {
+        "level number": 2,
+        "time": 360,
+        "num_chips": 8,
+        "upper layer": [],
+        "lower layer": [],
+        "optional_fields": [
+            { "id": "hint", "hint_text": "Watch out for hazards!" },
+            { "id": "title", "title_text": "PfGD CC Level 2"},
+            { "id": "password", "password": [222, 216, 212, 220] },
+            { "id": "monster", "monster_location": [] }
         ]
     }
 ]
