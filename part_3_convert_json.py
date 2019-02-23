@@ -45,7 +45,7 @@ def make_cc_file_from_json( json_data ):
     return data_file
 
 #Part 2
-input_json_file = "data/cc_level_data.json"
+input_json_file = "data/sarahwan_cc1.json"
 
 with open(input_json_file, "r") as reader:
     cc_json = json.load(reader)
@@ -57,4 +57,4 @@ print("Function output:")
 print(make_cc_file_from_json(cc_json))
 
 cc_game_data = make_cc_file_from_json(cc_json)
-cc_dat_utils.write_cc_data_to_dat(cc_game_data, "data/cc_game_data.dat")
+cc_dat_utils.write_cc_data_to_dat(cc_game_data, "data/sarahwan_cc1.dat")
