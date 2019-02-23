@@ -8,11 +8,22 @@ import cc_data
 #Save converted data to DAT file
 
 def make_cc_file_from_json( json_data ):
+    # Initializing CCDataFile
+    data_file = cc_data.CCDataFile()
+
     # Iterating through level dictionaries in JSON file
-    for x in json_data:
+    for lvl in json_data:
+        # Initializing CCLevel
+        level = cc_data.CCLevel()
         print("######### LEVEL #########")
-        print(x)
+        print(lvl)
         print("#########################")
+
+        # Iterating through optional fields in level
+        for fld in lvl["optional_fields"]:
+            print("%%%%%%%% FIELD %%%%%%%%")
+            print(fld)
+            print("%%%%%%%%%%%%%%%%%%%%%%%")
 
 #Part 2
 input_json_file = "data/cc_level_data.json"
