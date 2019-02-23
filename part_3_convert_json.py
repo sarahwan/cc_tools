@@ -29,7 +29,7 @@ def make_cc_file_from_json( json_data ):
             elif fld["id"] == "title":
                 new_field = cc_data.CCMapTitleField(fld["title_text"])
             elif fld["id"] == "password":
-                new_field = cc_data.CCPasswordField(fld["password"])
+                new_field = cc_data.CCEncodedPasswordField(fld["password"])
             elif fld["id"] == "monster":
                 coords = []
                 # Creating list of CCCoordinate objects
@@ -58,6 +58,3 @@ print(make_cc_file_from_json(cc_json))
 
 cc_game_data = make_cc_file_from_json(cc_json)
 cc_dat_utils.write_cc_data_to_dat(cc_game_data, "data/cc_game_data.dat")
-
-pfgd_test_data = cc_dat_utils.make_cc_data_from_dat("data/pfgd_test.dat")
-cc_dat_utils.write_cc_data_to_dat(pfgd_test_data, "data/copy_of_pfgd_test.dat")
