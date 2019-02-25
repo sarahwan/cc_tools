@@ -38,18 +38,22 @@ def make_cc_file_from_json( json_data ):
                     coords.append(new_coord)
                 new_field = cc_data.CCMonsterMovementField(coords)
             elif fld["id"] == "trap":
-                tc = fld["trap_location"]
-                bc = fld["trap_button"]
+                traps = []
+                b_lst = fld["trap_button"]
+                l_lst = fld["trap_location"]
+
+                # bc = cc_data.CCCoordinate(b_lst[0], b_lst[1])
+                # tc = cc_data.CCCoordinate(l_lst[0], l_lst[1])
 
                 # Initializing trap information
-                trap = cc_data.CCTrapControl(bc[0], bc[1], tc[0], tc[1])
-                new_field = cc_data.CCTrapControlsField(trap)
+                traps.append(cc_data.CCTrapControl(b_lst[0], b_lst[1], l_lst[0], l_lst[1]))
+                new_field = cc_data.CCTrapControlsField(traps)
             else:
                 print("There was an error... Unexpected field!")
 
             # Adding newly made field to level
             level.add_field(new_field)
-            
+
         # Adding level to game data file
         data_file.add_level(level)
     return data_file
